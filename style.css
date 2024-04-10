@@ -1,0 +1,150 @@
+@charset "UTF-8"; 
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: rgb(216, 18, 24);
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    height: 75px;
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    background-color: rgba(222, 184, 135, 0.39);
+    margin: 5px 0px 0px 0px;
+}
+
+.tituloprincipal {
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    height: 150px;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+    font-size: 15px;
+    margin: 0px 0px 20px 0px;
+    padding: 15px 0px 10px 20px;
+}
+
+.selecao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.escolhadeveiculo {
+    text-align: center;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.preenchimento {
+    display: flex;
+}
+
+.tipo, .marca, .modelo, .preco, .ano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.tipo label, .marca label, .modelo label, .preco label, .ano label {
+    margin-bottom: 5px;
+}
+
+.tipo input {
+    width: 150px;
+    border: 5px solid lightgray;
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+
+.tipo input, .marca input, .modelo input, .preco input {
+    width: 150px;
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.ano select {
+    width: 150px;
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 5px;
+    appearance: none; 
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table td img{
+    width: 25px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #fff;
+}
+
+button {
+    padding: 0px;
+    width: 40%;
+    font-size: 20px;
+    background-color: rgb(216, 18, 24);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    border: none;
+}
+
+.botoes {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.botaoadicionar {
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.botaoexcluir {
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 8px;
+}

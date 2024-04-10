@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Inter:wght@100;200;300 ; 400;500;600;700;800;900 & display=swap" rel="stylesheet">
+    <title>Revenda de Veículos</title>
+</head>
+<body>
+<header>
+    <h1 class="tituloprincipal">Revenda de Veículos</h1>
+</header>
+<main class="menu">
+    <h2 class="titulo">Gerenciamento de Veículos Vendidos</h2>
+
+            <div class="selecao">
+                <div class="escolhadeveiculo"><legend class="tipo">Tipo:</legend>
+                <select id="tipo">
+                    <option value="Carro">Carro</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Caminhão">Caminhão</option>
+                </select>
+            </div>
+        
+                <div class="preenchimento">
+                    <div class="marca"><label for="marca">Marca:</label>
+                    <input type="text" id="marca" required></div>
+                    <div class="modelo"><label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" required ></div>
+                    <div class="preco"><label for="preco">Preço de venda</label>
+                    <input type="text" id="preco" required></div>
+                    <div class="ano"><label for="ano">Ano:</label>
+                    <select id="ano"></select></div>
+            </div>
+        </div>
+       
+        <div class="botoes">
+            <button type="button" class="botaoadicionar" onclick="adicionar ()">Adicionar</button>
+            <button type="button" class="botaoexcluir" onclick="excluir ()">Excluir</button>
+        </div>
+</main>
+
+<table id="formulario">
+    <tr>
+        <th>Tipo</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Ano</th>
+        <th>Preço de Venda</th>
+        <th>Ações</th>
+    </tr>
+
+</table>
+</body>
+
+<script src="principal.js"></script>
+
